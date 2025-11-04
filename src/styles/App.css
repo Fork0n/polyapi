@@ -632,3 +632,19 @@
         margin: 0 auto;
     }
 }
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+    gap: 12px;
+    min-height: calc(100vh - 120px);
+}
+
+.chatbot-container {
+    width: 350px;
+    height: fit-content;
+    position: sticky;
+    top: 24px;
+}

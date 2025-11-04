@@ -9,8 +9,8 @@ import MoviesSection from './components/sections/MoviesSection';
 import MiscSection from './components/sections/MiscSection';
 import LoadingOverlay from './components/LoadingOverlay';
 import Snackbar from './components/Snackbar';
-import './styles/App.css';
 import { ChatBot } from './components/ChatBot';
+import './styles/App.css';
 
 function App() {
     const [activePage, setActivePage] = useState('weather');
@@ -40,6 +40,7 @@ function App() {
                         {sections[activePage]}
                     </AnimatePresence>
                 </main>
+                <ChatBot />
             </div>
             <LoadingOverlay loading={loading} />
             <Snackbar show={snackbar.show} message={snackbar.message} />
